@@ -1,4 +1,4 @@
-# Introducción:
+# API:
 En esta clase aprenderemos sobre las APIs en JavaScript, su utilidad, y cómo utilizarlas tanto en el lado del cliente como con APIs de terceros. También veremos cómo obtener datos desde un servidor utilizando Ajax, las APIs XHR y Fetch, y cómo procesar las respuestas obtenidas.
 
 ## Qué es una API y para qué sirve:
@@ -50,22 +50,46 @@ En esta clase aprenderemos sobre las APIs en JavaScript, su utilidad, y cómo ut
         - Es compatible con las características de los nuevos estándares web, como los Streams.
 
 ## Realizando solicitudes con XHR:
-Para realizar una solicitud con XHR, necesitamos crear una instancia de XMLHttpRequest, configurar la solicitud y los controladores de eventos, y luego enviar la solicitud al servidor.
-Realizando solicitudes con Fetch:
-Para realizar una solicitud con Fetch, utilizamos la función fetch() y proporcionamos la URL de la API o servidor que deseamos consultar.
-Fetch devuelve una promesa que se resuelve con la respuesta obtenida.
-Cuándo usar XHR o Fetch:
-XHR puede ser útil si se necesita un mayor control sobre la solicitud y la respuesta, o si se requiere una compatibilidad con navegadores antiguos.
-Fetch es recomendado para la mayoría de los casos debido a su sintaxis más moderna, el uso de promesas y su mayor compatibilidad con las nuevas características web.
-APIs de terceros:
-Las APIs de terceros son APIs desarrolladas por servicios externos que nos permiten acceder a sus funcionalidades y datos desde nuestra aplicación.
-Estas APIs generalmente requieren una clave de API (api-key) para autenticar y limitar el acceso a los recursos.
-Conectando la API con una api-key:
-Para conectarse a una API de terceros, generalmente necesitamos obtener una clave de API (api-key) registrándonos en el servicio o plataforma correspondiente.
-La clave de API se utiliza para autenticar nuestras solicitudes a la API y permitir el acceso a los recursos.
-Solicitando datos a la API:
-Una vez que tenemos la clave de API, podemos utilizarla en nuestras solicitudes a la API proporcionando la clave como parte de los parámetros de la solicitud o en el encabezado (header) de la solicitud.
-Dependiendo de la API, es posible que también necesitemos proporcionar otros parámetros o especificar el tipo de datos que queremos obtener.
-Procesamiento de la respuesta:
-Después de realizar una solicitud a la API, recibiremos una respuesta que puede estar en diferentes formatos, como JSON, XML o texto plano.
-Podemos utilizar las funciones y métodos proporcionados por JavaScript para procesar y manipular los datos obtenidos de la respuesta de la API.
+- Para realizar una solicitud con XHR, necesitamos crear una instancia de XMLHttpRequest, configurar la solicitud y los controladores de eventos, y luego enviar la solicitud al servidor.
+
+## Realizando solicitudes con Fetch:
+- Para realizar una solicitud con Fetch, utilizamos la función fetch() y proporcionamos la URL de la API o servidor que deseamos consultar.
+- Fetch devuelve una promesa que se resuelve con la respuesta obtenida.
+## Cuándo usar XHR o Fetch:
+- XHR puede ser útil si se necesita un mayor control sobre la solicitud y la respuesta, o si se requiere una compatibilidad con navegadores antiguos.
+- Fetch es recomendado para la mayoría de los casos debido a su sintaxis más moderna, el uso de promesas y su mayor compatibilidad con las nuevas características web.
+
+## APIs de terceros:
+- Las APIs de terceros son APIs desarrolladas por servicios externos que nos permiten acceder a sus funcionalidades y datos desde nuestra aplicación.
+- Estas APIs generalmente requieren una clave de API (api-key) para autenticar y limitar el acceso a los recursos.
+## Conectando la API con una api-key:
+- Para conectarse a una API de terceros, generalmente necesitamos obtener una clave de API (api-key) registrándonos en el servicio o plataforma correspondiente.
+- La clave de API se utiliza para autenticar nuestras solicitudes a la API y permitir el acceso a los recursos.
+## Solicitando datos a la API:
+- Una vez que tenemos la clave de API, podemos utilizarla en nuestras solicitudes a la API proporcionando la clave como parte de los parámetros de la solicitud o en el encabezado (header) de la solicitud.
+- Dependiendo de la API, es posible que también necesitemos proporcionar otros parámetros o especificar el tipo de datos que queremos obtener.
+## Procesamiento de la respuesta:
+- Después de realizar una solicitud a la API, recibiremos una respuesta que puede estar en diferentes formatos, como JSON, XML o texto plano.
+- Podemos utilizar las funciones y métodos proporcionados por JavaScript para procesar y manipular los datos obtenidos de la respuesta de la API.
+
+
+Ejemplo de código (Realizando una solicitud a una API utilizando Fetch):
+```js
+const apiKey = 'TU_API_KEY';
+const apiUrl = 'https://api.example.com/data';
+
+fetch(apiUrl, {
+  headers: {
+    'Authorization': `API-Key ${apiKey}`
+  }
+})
+  .then(response => response.json())
+  .then(data => {
+    // Procesar y utilizar los datos obtenidos de la API
+    console.log(data);
+  })
+  .catch(error => {
+    // Manejar errores de la solicitud
+    console.error('Error:', error);
+  });
+```
