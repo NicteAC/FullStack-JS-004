@@ -16,7 +16,7 @@ II. Clases en JavaScript
 - Declaración de la clase:
   Para declarar una clase en JavaScript, utilizamos la palabra clave class, seguida del nombre de la clase. Por ejemplo:
 
-```sh
+```js
 class Persona {
   // contenido de la clase
 }
@@ -25,7 +25,7 @@ class Persona {
 - Constructor de la clase:
   El constructor es un método especial dentro de una clase que se utiliza para inicializar los objetos creados a partir de la clase. Se define utilizando la palabra clave constructor. Por ejemplo:
 
-```sh
+```js
 class Persona {
   constructor(nombre, edad) {
     this.nombre = nombre;
@@ -39,7 +39,7 @@ class Persona {
 - Métodos de la clase:
   Los métodos son funciones definidas dentro de una clase y se utilizan para realizar operaciones en los objetos creados a partir de la clase. Se definen como funciones dentro del cuerpo de la clase. Por ejemplo:
 
-```sh
+```js
 class Persona {
   constructor(nombre, edad) {
     this.nombre = nombre;
@@ -59,7 +59,7 @@ class Persona {
 
 - Instanciación de la clase:
 Para crear instancias u objetos de una clase, utilizamos la palabra clave new, seguida del nombre de la clase y los parámetros necesarios para el constructor. Por ejemplo:
-```sh
+```js
 const persona1 = new Persona("Juan", 25);
 ```
 En el ejemplo anterior, se ha creado una instancia de la clase Persona llamada persona1 con los valores "Juan" y 25 pasados al constructor.
@@ -67,7 +67,7 @@ En el ejemplo anterior, se ha creado una instancia de la clase Persona llamada p
 - Uso de los métodos y propiedades:
 Una vez que se ha creado una instancia de la clase, podemos acceder a los métodos y propiedades utilizando la notación de punto. Por ejemplo:
 
-```sh
+```js
 console.log(persona1.nombre); // Salida: "Juan"
 persona1.saludar(); // Salida: "Hola, mi nombre es Juan"
 console.log(persona1.obtenerEdad()); // Salida: 25
@@ -76,7 +76,7 @@ En el ejemplo anterior, se accede a la propiedad nombre y se llama a los método
 
 - Para utilizar la herencia de clases en JavaScript, puedes utilizar la palabra clave extends. Esto te permite crear una clase hija que hereda propiedades y métodos de una clase padre. Aquí tienes un ejemplo:
 
-```sh
+```js
 class Empleado extends Persona {
   constructor(nombre, edad, salario) {
     super(nombre, edad);
