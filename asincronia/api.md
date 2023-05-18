@@ -95,9 +95,8 @@ fetch(apiUrl, {
 ```
 
 ## Que es API FETCH
-```
- La API Fetch es una interfaz de JavaScript moderna que proporciona una forma más flexible y poderosa de realizar solicitudes de red (HTTP) y obtener respuestas desde un servidor. Esta API está diseñada para reemplazar la antigua XMLHttpRequest (XHR) y ofrece una sintaxis más sencilla y basada en promesas.
-```
+> La API Fetch es una interfaz de JavaScript moderna que proporciona una forma más flexible y poderosa de realizar solicitudes de red (HTTP) y obtener respuestas desde un servidor. Esta API está diseñada para reemplazar la antigua XMLHttpRequest (XHR) y ofrece una sintaxis más sencilla y basada en promesas.
+
 ## Características y ventajas clave de la API Fetch:
 
 - Sintaxis basada en promesas: Fetch utiliza promesas, lo que permite un manejo más fácil y legible del código asincrónico. Esto evita el anidamiento excesivo de callbacks y facilita el encadenamiento de acciones.
