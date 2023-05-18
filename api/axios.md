@@ -1,4 +1,4 @@
-# ==Axios:== :computer:
+# Axios: :computer:
 
 - Axios es una biblioteca de JavaScript basada en promesas que nos permite realizar solicitudes HTTP desde el navegador o desde Node.js.
 - Proporciona una interfaz fácil de usar y una sintaxis sencilla para realizar solicitudes GET, POST, PUT, DELETE, etc.

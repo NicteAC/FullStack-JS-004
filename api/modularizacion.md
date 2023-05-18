@@ -1,4 +1,4 @@
-# ==Modularización== en JavaScript:
+# Modularización en JavaScript:
 
 - La modularización es una técnica que nos permite dividir nuestro código en módulos más pequeños y reutilizables.
 - Los módulos nos ayudan a organizar nuestro código de manera más estructurada y a evitar la contaminación del espacio global.
@@ -27,7 +27,7 @@ console.log(sum(5, 3)); // Output: 8
 console.log(multiply(2, 4)); // Output: 8
 ```
 
-En este ejemplo, hemos creado un módulo "math.js" que exporta las funciones sum y multiply. Luego, en el módulo principal "app.js", importamos estas funciones utilizando la sintaxis ==import== y las utilizamos en nuestro código.
+En este ejemplo, hemos creado un módulo "math.js" que exporta las funciones sum y multiply. Luego, en el módulo principal "app.js", importamos estas funciones utilizando la sintaxis import y las utilizamos en nuestro código.
 
 ### _Otras formas_
 
