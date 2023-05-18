@@ -93,3 +93,21 @@ fetch(apiUrl, {
     console.error('Error:', error);
   });
 ```
+
+## Que es API FETCH
+```
+ La API Fetch es una interfaz de JavaScript moderna que proporciona una forma más flexible y poderosa de realizar solicitudes de red (HTTP) y obtener respuestas desde un servidor. Esta API está diseñada para reemplazar la antigua XMLHttpRequest (XHR) y ofrece una sintaxis más sencilla y basada en promesas.
+```
+## Características y ventajas clave de la API Fetch:
+
+- Sintaxis basada en promesas: Fetch utiliza promesas, lo que permite un manejo más fácil y legible del código asincrónico. Esto evita el anidamiento excesivo de callbacks y facilita el encadenamiento de acciones.
+
+- Soporte nativo para formatos de datos modernos: Fetch es compatible con el manejo nativo de datos en formatos como JSON, XML, ArrayBuffer y FormData. También es compatible con el envío y recepción de archivos (Blobs).
+
+- Control y configuración de solicitudes: Fetch proporciona un conjunto de opciones de configuración flexibles para personalizar las solicitudes. Esto incluye el establecimiento de encabezados personalizados, la elección del método de solicitud (GET, POST, PUT, DELETE, etc.) y el envío de parámetros en la URL o en el cuerpo de la solicitud.
+
+- Gestión de errores mejorada: Fetch tiene una forma más consistente y mejorada de manejar errores en comparación con XHR. Si la solicitud no se completa con éxito (por ejemplo, debido a un error de red o una respuesta de error del servidor), Fetch rechaza la promesa y permite un manejo de errores más sencillo con el uso de catch().
+
+- Admite el uso de Streams: Fetch es compatible con el uso de Streams, lo que permite el manejo de datos en tiempo real a medida que se descargan. Esto es especialmente útil cuando se trabaja con grandes volúmenes de datos o se necesita procesar gradualmente una respuesta.
+
+> En resumen, la API Fetch proporciona una forma más moderna y conveniente de realizar solicitudes HTTP y obtener respuestas desde un servidor en JavaScript. Su sintaxis basada en promesas, opciones de configuración y manejo de errores mejorado la convierten en una opción preferida para realizar operaciones de red en aplicaciones web actuales.
