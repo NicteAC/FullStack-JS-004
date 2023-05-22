@@ -123,7 +123,13 @@ Una base de datos relacional está compuesta por varios objetos, entre los cuale
 
 - Procedimientos almacenados: Son bloques de código SQL que se almacenan en la base de datos y se pueden invocar para realizar operaciones complejas o recurrentes.
 
-Estos son solo algunos de los objetos principales en una base de datos relacional, y cada RDBMS puede ofrecer otros objetos adicionales según sus características específicas.
+- Base de datos: Una base de datos es una colección organizada de información estructurada y relacionada, que se guarda y se accede a través de un sistema de gestión de bases de datos (DBMS). Permite almacenar, gestionar y manipular grandes volúmenes de datos de manera eficiente.
+
+- Registro: En el contexto de una base de datos, un registro es una instancia única de una entidad representada por una fila en una tabla. Contiene los valores de los atributos o columnas que definen la entidad.
+
+- Columna: En una tabla de base de datos, una columna representa un atributo o campo específico que describe los datos almacenados en cada registro. Cada columna tiene un nombre y un tipo de dato asociado que define el tipo de información que puede almacenar.
+
+>Estos son solo algunos de los objetos principales en una base de datos relacional, y cada RDBMS puede ofrecer otros objetos adicionales según sus características específicas.
 
 ---
 
