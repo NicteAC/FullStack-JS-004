@@ -17,7 +17,7 @@ LONGBLOB|	Para BLOB (Objetos grandes binarios). Tiene capacidad para 4.294.967.2
 ENUM (x, y, z, etc.)|	Permite ingresar una lista de valores posibles. Puede enumerar hasta 65535 valores en una lista ENUM. Si se inserta un valor que no está en la lista, se insertará un valor en blanco.<br>**Nota:** los valores se ordenan en el orden en que los ingresas.<br>Ingrese los valores posibles en este formato: ENUM ('X', 'Y', 'Z')
 |SET|	Similar a ENUM, excepto que SET puede contener hasta 64 elementos de lista y puede almacenar más de una opción
 
-##Tipos de datos numéricos
+## Tipos de datos numéricos
 
 |Tipo de datos| Descripción|
 | ----------- | ----------- |
@@ -30,7 +30,7 @@ FLOAT (tamaño, d)|	Un pequeño número con un punto decimal flotante. La cantid
 DOBLE (tamaño, d)|	Un número grande con un punto decimal flotante. La cantidad máxima de dígitos se puede especificar en el parámetro de tamaño. El número máximo de dígitos a la derecha del punto decimal se especifica en el parámetro d|
 DECIMAL (tamaño, d)|	Un DOBLE almacenado como una cadena, lo que permite un punto decimal fijo. La cantidad máxima de dígitos se puede especificar en el parámetro de tamaño. El número máximo de dígitos a la derecha del punto decimal se especifica en el parámetro d|
 
-##Tipos de datos para Fechas
+## Tipos de datos para Fechas
 
 |Tipo de datos| Descripción|
 | ----------- | ----------- |

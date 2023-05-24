@@ -171,7 +171,7 @@ ALTER TABLE bank ADD COLUMN active BOOL;
 
 >DROP TABLE … RESTRICT se puede usar para evitar que se ejecute el comando DROP TABLE a menos que la tabla esté vacía.
 
-##¡ Use las declaraciones con precaución!
+## ¡ Use las declaraciones con precaución!
 
 ---
 ## Gestión de restricciones de SQL
@@ -235,7 +235,7 @@ UPSERT INTO employees (id, name, email) VALUES (6, ‘Lambert’, ‘lambert@wey
 DELETE FROM promo_codes WHERE code = 'HAPPY50';
 ```
 ---
-##consulta de datos
+## consulta de datos
 **SELECCIONAR DE …**
 *Devuelve los valores de columnas específicas en una tabla.*
 ```sql
