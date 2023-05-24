@@ -122,7 +122,8 @@ AS SELECT * FROM users
 WHERE city = 'new york';
 ```
 ---
-##Administrar tablas SQL
+
+## Administrar tablas SQL
 **MODIFICAR TABLA**
 *Aplicar un cambio de esquema a una tabla.*
 ```sql
