@@ -22,9 +22,10 @@ SHOW DATABASES;
 
 |DROP DATABASE IF EXISTS BANK;|	CREATE DATABASE IF NOT EXISTS BANK;|
 | ----------- | ----------- |
+
 <span style="font-weight:bold">DROP DATABASE … CASCADE</span> se puede utilizar para eliminar todos los objetos que dependen de la base de datos que se descarta. <span style="font-weight:bold">DROP DATABASE … RESTRICT</span> se puede usar para evitar que el <span style="font-weight:bold">DROP DATABASE</span> comando se ejecute a menos que la base de datos esté vacía.
 
-Ejemplos:
+**Ejemplos:**
 
 |DROP DATABASE BANK CASCADE;|	DROP DATABASE BANK RESTRICT;|
 | ----------- | ----------- |
