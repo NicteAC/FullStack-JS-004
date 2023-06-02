@@ -16,6 +16,14 @@ El objetivo es completar los siguientes pasos:
 
 1. Identificar los elementos fundamentales del lenguaje SQL necesarios para resolver el problema planteado.
 
+ - SELECT: para seleccionar los campos que queremos obtener en el resultado.
+- FROM: para especificar las tablas de las cuales queremos obtener los datos.
+- WHERE: para aplicar condiciones de selección y filtrar los datos.
+- JOIN: para combinar las tablas relacionadas y obtener información conjunta.
+- GROUP BY: para agrupar los datos por una columna específica.
+- SUM: para calcular la suma de un conjunto de valores.
+
+
 2. Escribir una sentencia SQL que utilice condiciones de selección para filtrar los pedidos realizados en el mes de mayo de 2023.
 
 3. Escribir una sentencia SQL que utilice la cláusula JOIN para combinar las tablas "DetallesPedidos" y "Productos" y obtener información relacionada.
