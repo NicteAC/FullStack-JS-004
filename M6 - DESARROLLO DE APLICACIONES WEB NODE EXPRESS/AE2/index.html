@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="http://localhost:8080/crear">
+      Nombre del archivo:
+      <input name="nombre" />
+      <br />
+      Contenido:
+      <textarea name="contenido" id="" cols="30" rows="5"></textarea>
+      <br />
+      <button>Crear</button>
+    </form>
+    <hr />
+    <!-- Segundo Formulario -->
+    <form action="http://localhost:8080/leer">
+      Nombre del archivo:
+      <input name="nombre" />
+      <br />
+      <button>Leer</button>
+    </form>
+    <hr />
+    <!-- Tercer Formulario -->
+    <form action="http://localhost:8080/renombrar">
+      Nombre del archivo:
+      <input name="nombre" />
+      <br />
+      <button>Renombrar</button>
+    </form>
+    <hr />
+    <!-- Cuarto Formulario -->
+    <form action="http://localhost:8080/eliminar">
+      Nombre del archivo:
+      <input name="nombre" />
+      <br />
+      <button>eliminar</button>
+    </form>
+  </body>
+</html>

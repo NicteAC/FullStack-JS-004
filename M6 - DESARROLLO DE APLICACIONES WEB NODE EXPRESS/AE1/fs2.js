@@ -1,5 +1,5 @@
 /* Basado en el ejercicio de tareas, crea una aplicación en Node que cree, lea, renombre
-y elimine un archivo llamado “shopping.js”, cuyo contenido debe ser una lista de
+y elimine un archivo llamado “shopping.txt”, cuyo contenido debe ser una lista de
 productos a comprar en un minimarket, siéntete libre de poner los valores que
 quieras para este ejercicio propuesto.
 Luego del método writeFile, cada método debe estar dentro de la función callback
