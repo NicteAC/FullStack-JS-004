@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "moment": "^2.29.4",
+    "yargs": "^17.7.2"
+  }
+}
