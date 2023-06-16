@@ -7,8 +7,8 @@ Express es un framework minimalista y flexible para construir aplicaciones web e
 **1. Instalación de Express:**
 
 - Antes de usar Express, debes asegurarte de tener Node.js instalado en tu sistema. Puedes descargar Node.js desde su sitio web oficial (https://nodejs.org) y seguir las instrucciones de instalación para tu sistema operativo.
-- Una vez que tienes Node.js instalado, puedes crear un nuevo proyecto de Node.js en una carpeta vacía utilizando el comando npm init. Esto creará un archivo package.json que mantendrá un registro de las dependencias y configuraciones de tu proyecto.
-- Luego, puedes instalar Express ejecutando el comando npm install express. Esto descargará e instalará Express en tu proyecto.
+- Una vez que tienes Node.js instalado, puedes crear un nuevo proyecto de Node.js en una carpeta vacía utilizando el comando **npm init**. Esto creará un archivo package.json que mantendrá un registro de las dependencias y configuraciones de tu proyecto.
+- Luego, puedes instalar Express ejecutando el comando **npm install express**. Esto descargará e instalará Express en tu proyecto.
 
 **2. Creación de un servidor básico:**
 
@@ -17,6 +17,8 @@ Express es un framework minimalista y flexible para construir aplicaciones web e
 
 ```js
 const express = require("express");
+//importacion de tipo modulo
+import express from "express";
 ```
 
 - Crea una instancia de la aplicación Express:
