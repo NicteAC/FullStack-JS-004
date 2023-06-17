@@ -4,7 +4,7 @@ import getRandomCard from "./cartas.js";
 const app = express();
 const PORT = 3000;
 
-app.get("/random-card", async (req, res) => {
+app.get("/", async (req, res) => {
   try {
     const card = await getRandomCard();
     res.json(card);

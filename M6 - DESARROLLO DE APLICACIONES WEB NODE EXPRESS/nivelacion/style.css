@@ -1,0 +1,16 @@
+div {
+    display: flex;
+    justify-content: center;
+  }
+  p {
+    text-align: center;
+    padding: 30px;
+    color: white;
+    border-radius: 50%;
+    font-size: 40px;
+    font-weight: bolder;
+  }
+  body{
+    background-color: black;
+    color: white;
+  }
