@@ -1,0 +1,10 @@
+<h1 style="margin-top: 20px; text-align: center">{{title}}</h1>
+{{#if tareas.length}}
+  <ul>
+    {{#each tareas}}
+      <li style="text-align: center; list-style: none">{{id}} - {{titulo}} </li>
+    {{/each}}
+  </ul>
+{{else}}
+  <p>No hay tareas para mostrar</p>
+{{/if}}
