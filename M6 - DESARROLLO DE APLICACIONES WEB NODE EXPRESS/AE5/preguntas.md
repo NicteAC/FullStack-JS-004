@@ -1,0 +1,2 @@
+- Una función que es ejecutada como respuesta de otra se considera un ________
+- El concepto __________ se refiere a una secuencia de varios callbacks anidados.

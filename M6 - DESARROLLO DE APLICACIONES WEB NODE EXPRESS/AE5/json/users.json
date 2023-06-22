@@ -1,0 +1,19 @@
+{
+  "users": [
+    {
+      "name": "John Doe",
+      "email": "johndoe@example.com",
+      "age": 30
+    },
+    {
+      "name": "Marge Simpson",
+      "email": "emailFalso@example.cl",
+      "age": 30
+    },
+    {
+      "name": "Homer Simpson",
+      "email": "emailVerdadero@example.cl",
+      "age": 35
+    }
+  ]
+}
