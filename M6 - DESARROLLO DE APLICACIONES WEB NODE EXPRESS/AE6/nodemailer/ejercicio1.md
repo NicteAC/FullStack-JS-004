@@ -23,28 +23,4 @@ Con esto tenemos todo listo para realizar nuestra primera prueba, sigue los paso
 
 - Paso 5: Usa condicionales para imprimir por consola el error y la data correspondiente al envío en caso de existir.
 
-```js
-// Paso 1
-const nodemailer = require("nodemailer");
-// Paso 2
-let transporter = nodemailer.createTransport({
-  service: "gmail",
-  auth: {
-    user: "",
-    pass: "",
-  },
-});
-// Paso 3
-let mailOptions = {
-  from: "",
-  to: "",
-  subject: "Nodemailer Test",
-  text: "Probando... 1,2,3...",
-};
-// Paso 4
-transporter.sendMail(mailOptions, (err, data) => {
-  // Paso 5
-  if (err) console.log(err);
-  if (data) console.log(data);
-});
-```
+
