@@ -4,12 +4,12 @@ function enviar(to, subject, text) {
   let transporter = nodemailer.createTransport({
     service: "outlook",
     auth: {
-      user: "fullstackjs.example@outlook.es",
-      pass: "ad-jscript-0004",
+      user: "...",
+      pass: "...",
     },
   });
   let mailOptions = {
-    from: "fullstackjs.example@outlook.es",
+    from: "...",
     to,
     subject,
     text,

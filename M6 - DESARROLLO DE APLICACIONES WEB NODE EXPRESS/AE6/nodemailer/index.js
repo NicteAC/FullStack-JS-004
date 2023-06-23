@@ -11,8 +11,8 @@ let transporter = nodemailer.createTransport({
 });
 //3
 let mailOptions = {
-  from: "fullstackjs.example@outlook.es",
-  to: "fullstackjs.nodemailer@gmail.com",
+  from: "...",
+  to: "...",
   subject: "Nodemailer Test 0004",
   html: `
     <h1>Estimad@ usuario</h1>
