@@ -1,15 +1,16 @@
+require("dotenv").config();
 const nodemailer = require("nodemailer");
 
 function enviar(to, subject, text) {
   let transporter = nodemailer.createTransport({
-    service: "outlook",
+    service: process.env.SMTP_SERVICE,
     auth: {
-      user: "...",
-      pass: "...",
+      user: process.env.SMTP_USER,
+      pass: process.env.SMTP_PASSWORD,
     },
   });
   let mailOptions = {
-    from: "...",
+    from: process.env.SMTP_USER,
     to,
     subject,
     text,

@@ -1,18 +1,19 @@
+require("dotenv").config()
 //1
 const nodemailer = require("nodemailer");
 
 //2
 let transporter = nodemailer.createTransport({
-  service: "outlook",
+  service: process.env.SMTP_SERVICE,
   auth: {
-    user: "fullstackjs.example@outlook.es",
-    pass: "ad-jscript-0004",
+    user:  process.env.SMTP_USER,
+    pass: process.env.SMTP_PASSWORD,
   },
 });
 //3
 let mailOptions = {
-  from: "...",
-  to: "...",
+  from:  process.env.SMTP_USER,
+  to:  process.env.SMTP_FROM,
   subject: "Nodemailer Test 0004",
   html: `
     <h1>Estimad@ usuario</h1>
