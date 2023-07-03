@@ -40,7 +40,11 @@ const connection = mysql.createConnection({
   database: 'nombre_base_de_datos'
 });
 ```
-
+> **Como recomendacion se debe crear un nuevo usuario otorgando los permisos de administrador**
+CREATE USER 'nuevo_usuario'@'localhost' IDENTIFIED BY 'contraseña';
+GRANT ALL PRIVILEGES ON *.* TO 'nuevo_usuario'@'localhost';
+ALTER USER 'nuevo_usuario'@'localhost' IDENTIFIED WITH mysql_native_password BY 'contraseña';
+FLUSH PRIVILEGES;
 ### El cliente de conexión:
 
 Después de definir las credenciales de acceso, creamos una instancia del cliente de conexión utilizando el método **createConnection()** del paquete **mysql**.
