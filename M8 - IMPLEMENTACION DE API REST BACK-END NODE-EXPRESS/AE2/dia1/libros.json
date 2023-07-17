@@ -1,0 +1,102 @@
+[
+    {
+        "id": 1,
+        "titulo": "Matar a un ruiseñor",
+        "autor": "Harper Lee"
+    },
+    {
+        "id": 2,
+        "titulo": "1984",
+        "autor": "George Orwell"
+    },
+    {
+        "id": 3,
+        "titulo": "El gran Gatsby",
+        "autor": "F. Scott Fitzgerald"
+    },
+    {
+        "id": 4,
+        "titulo": "Cien años de soledad",
+        "autor": "Gabriel García Márquez"
+    },
+    {
+        "id": 5,
+        "titulo": "Orgullo y prejuicio",
+        "autor": "Jane Austen"
+    },
+    {
+        "id": 6,
+        "titulo": "El guardián entre el centeno",
+        "autor": "J.D. Salinger"
+    },
+    {
+        "id": 7,
+        "titulo": "El hobbit",
+        "autor": "J.R.R. Tolkien"
+    },
+    {
+        "id": 8,
+        "titulo": "Fahrenheit 451",
+        "autor": "Ray Bradbury"
+    },
+    {
+        "id": 9,
+        "titulo": "Moby Dick",
+        "autor": "Herman Melville"
+    },
+    {
+        "id": 10,
+        "titulo": "El señor de los anillos",
+        "autor": "J.R.R. Tolkien"
+    },
+    {
+        "id": 11,
+        "titulo": "Harry Potter y la piedra filosofal",
+        "autor": "J.K. Rowling"
+    },
+    {
+        "id": 12,
+        "titulo": "Guerra y paz",
+        "autor": "León Tolstoi"
+    },
+    {
+        "id": 13,
+        "titulo": "El león, la bruja y el armario",
+        "autor": "C.S. Lewis"
+    },
+    {
+        "id": 14,
+        "titulo": "El código Da Vinci",
+        "autor": "Dan Brown"
+    },
+    {
+        "id": 15,
+        "titulo": "Los miserables",
+        "autor": "Víctor Hugo"
+    },
+    {
+        "id": 16,
+        "titulo": "Rebelión en la granja",
+        "autor": "George Orwell"
+    },
+    {
+        "id": 17,
+        "titulo": "Lo que el viento se llevó",
+        "autor": "Margaret Mitchell"
+    },
+    {
+        "id": 18,
+        "titulo": "Los hombres que no amaban a las mujeres",
+        "autor": "Stieg Larsson"
+    },
+    {
+        "id": 19,
+        "titulo": "Los juegos del hambre",
+        "autor": "Suzanne Collins"
+    },
+    {
+        "id": 20,
+        "titulo": "Cometas en el cielo",
+        "autor": "Khaled Hosseini"
+    }
+]
