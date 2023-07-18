@@ -95,7 +95,6 @@ const eliminarCita = async (id) => {
 };
 
 const editarCita = async (datos) => {
-    console.log(datos)
   const consulta =
     "UPDATE Cita SET fecha = ?, hora = ?, servicio = ?, peluqueroId = ?, clienteId = ? WHERE id = ?";
   try {

@@ -105,24 +105,21 @@ function nuevoCliente() {
   telefono.value = "";
   correo.value = "";
 }
-function prepararCita(i, id) {
+function prepararCita(id, i)  {
   let date = new Date(citas[i].fecha);
   let year = date.getFullYear();
   let month = date.getMonth() + 1;
   let day = date.getDate();
   if (month < 10) month = "0" + month;
   if (day < 10) day = "0" + day;
-
   let formattedDate = `${year}-${month}-${day}`;
-  let pelu = peluqueros.find(
-    (p) => p.NombrePeluquero == citas[i].NombrePeluquero
-  );
-  console.log(pelu);
+  let pelu = peluqueros.find((p) => p.nombre == citas[i].NombrePeluquero);
+  let client = clientes.find((c) => c.nombre == citas[i].NombreCliente);
   fecha.value = formattedDate;
   hora.value = citas[i].hora;
   servicio.value = citas[i].especialidad;
-  peluquero.value = pelu;
-  cliente.value = citas[i].NombreCliente;
+  peluquero.value = pelu.id;
+  cliente.value = client.id;
   document
     .getElementById("editar")
     .setAttribute("onclick", `editarCita('${id}')`);
@@ -131,19 +128,19 @@ function prepararCita(i, id) {
 }
 
 function editarCita(id) {
-  axios
-    .put(url + "cita", {
-      fecha: fecha.value,
-      hora: hora.value,
-      servicio: servicio.value,
-      peluquero: peluquero.value,
-      cliente: cliente.value,
-      id: id,
-    })
-    .then(() => {
-      document.getElementById("agregarCita").style.display = "block";
-      document.getElementById("editar").style.display = "none";
-    });
+  let data = {
+    fecha: fecha.value,
+    hora: hora.value,
+    servicio: servicio.value,
+    peluquero: peluquero.value,
+    cliente: cliente.value,
+    id: id,
+  };
+  console.log(data)
+  axios.put(url + "cita", data).then(() => {
+    document.getElementById("agregarCita").style.display = "block";
+    document.getElementById("editar").style.display = "none";
+  });
 }
 
 function eliminarCita(i, id) {

@@ -9,7 +9,7 @@ import {
   eliminarCita,
   editarCita,
 } from "./db.js";
-console.log(editarCita);
+
 const app = express();
 const port = 3000;
 
