@@ -1,0 +1,21 @@
+<form action="/subirfoto" method="post" enctype="multipart/form-data">
+  <label>Nombre</label>
+  <input type="text" name="nombre" required />
+
+  <label>Apellido</label>
+  <input type="text" name="apellido" required />
+
+  <input type="file" name="foto" required />
+  <div class="button-wrapper">
+    <button type="submit">Enviar</button>
+  </div>
+</form>
+
+<form action="/eliminarfoto" method="post" enctype="multipart/form-data">
+  <label>Nombre del archivo</label>
+  <input type="text" name="filedelete" required />
+
+  <div class="button-wrapper">
+    <button type="submit">Eliminar</button>
+  </div>
+</form>

@@ -49,6 +49,9 @@ const peluquero = async () => {
     return error;
   }
 };
+const peluqueroById = async (id) =>{
+
+}
 
 const cliente = async () => {
   try {
