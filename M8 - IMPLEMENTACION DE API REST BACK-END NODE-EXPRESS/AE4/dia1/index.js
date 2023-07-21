@@ -4,9 +4,8 @@ import jwt from "jsonwebtoken";
 const app = express();
 
 app.listen(3000, () => console.log("Iniciando en puerto 3000"));
-app.use(express.urlencoded({ extended: false }));
-app.use(express.json());
-const secretKey = "Mi llave super secreta";
+
+const secretKey = "Mi Llave Ultra Secreta";
 
 const token = jwt.sign(users[0], secretKey);
 
