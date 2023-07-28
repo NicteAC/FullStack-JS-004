@@ -1,7 +1,7 @@
 <section class="container">
   <div class="container">
     <h1 class="mt-5 text-center">Registro usuario</h1>
-    <form action="/register" method="POST">
+    <form action="/register-admin" method="POST">
       <div class="mb-3">
         <label class="form-label" >Nombre</label>
         <input
@@ -9,6 +9,7 @@
           class="form-control"
           name="nombre"
           required
+          value="Admin DGA"
         />
       </div>
       <div class="mb-3">
@@ -18,6 +19,7 @@
           class="form-control"
           name="email"
           required
+          value="admin@dga.cl"
         />
       <div class="mb-3">
         <label class="form-label">Password</label>
@@ -26,6 +28,7 @@
           class="form-control"
           name="contrasena"
           required
+          value="12345678"
         />
       </div>
       <button type="submit" class="btn btn-primary">Registrar</button>

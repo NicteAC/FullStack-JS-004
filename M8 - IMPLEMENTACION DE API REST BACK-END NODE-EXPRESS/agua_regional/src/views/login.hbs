@@ -1,25 +1,66 @@
 <div class="container">
-    <h1 class="mt-5 text-center">Inicio sesión</h1>
-  <form>
+  <h1 class="mt-5 text-center">Inicio sesión</h1>
+  <form id="login_form">
     <div class="mb-3">
-      <label for="exampleInputEmail1" class="form-label">Email address</label>
+      <label class="form-label">Nombre</label>
+      <input
+        type="text"
+        class="form-control"
+        name="nombre"
+        required
+      />
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Email</label>
       <input
         type="email"
         class="form-control"
-        id="exampleInputEmail1"
-        aria-describedby="emailHelp"
+        name="email"
+       required
       />
-      <div id="emailHelp" class="form-text">We'll never share your email with
-        anyone else.</div>
-    </div>
     <div class="mb-3">
-      <label for="exampleInputPassword1" class="form-label">Password</label>
-      <input type="password" class="form-control" id="exampleInputPassword1" />
-    </div>
-    <div class="mb-3 form-check">
-      <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+      <label  class="form-label">Password</label>
+      <input type="password" class="form-control" name="contrasena" />
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
   </form>
 </div>
+
+<script>
+  const form = document.getElementById('login_form');
+
+  form.addEventListener('submit', async (event) => {
+    event.preventDefault();
+
+    // obtener formdata
+    const formData = new FormData(form);
+
+    // Send form data to the server using Fetch API (you can use other AJAX methods if needed)
+    try {
+      const response = await fetch('/login', {
+        method: 'POST',
+        body: new URLSearchParams(formData),
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+        },
+      });
+      console.log('respuesta login', response);
+      if (response.ok) {
+        const data = await response.json();
+
+        // Now you can use the data returned from the server
+        console.log('data',data);
+
+        // Store the token in localStorage
+        localStorage.setItem('token', data.token);
+
+        // Redirect to a new page or perform other actions as needed
+        window.location.href = '/';
+      } else {
+        console.log('error login');
+      }
+    } catch (error) {
+      console.error('error:', error);
+    }
+  });
+</script>
